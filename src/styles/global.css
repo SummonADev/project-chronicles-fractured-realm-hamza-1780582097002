@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-realm-dark: #0a0e17;
+  --color-realm-darker: #060a12;
+  --color-realm-mid: #141c2e;
+  --color-realm-light: #1e2a45;
+  --color-realm-accent: #c9a84c;
+  --color-realm-accent2: #6c8cd5;
+  --color-realm-red: #c44040;
+  --color-realm-green: #40c460;
+  --color-realm-blue: #4080c4;
+  --color-realm-purple: #8040c4;
+  --color-realm-text: #d4d8e0;
+  --color-realm-text-dim: #7a8299;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-realm-darker);
+  color: var(--color-realm-text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-realm-darker);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-realm-light);
+  border-radius: 3px;
+}
